@@ -21,7 +21,7 @@ int main(void)
 					putchar(k);
 					if (c != '7')
 					{
-						putchar('.');
+						putchar(',');
 						putchar(' ');
 					}
 				}
