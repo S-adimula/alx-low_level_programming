@@ -5,29 +5,18 @@
  * @n: integer
  * Return: this function prints from n to 98
  */
-void print_to_98(int n)
+void print_to_98(int)
 {
 	if (n < 98)
 	{
-		for (; n <= 98; n++)
-		{
-			printf("%d", n);
-			if (n != 98)
-			{
-				printf(",");
-			}
-		}
+		for (n = n; n < 98; n++)
+			printf("%d, ", n);
+		printf("%d\n", 98);
 	}
 	else
 	{
-		for (; n >= 98; n--)
-		{
-			printf("%d", n);
-			if (n != 98)
-			{
-				printf(",");
-			}
-		}
+		for (n = n; n > 98; n--)
+			printf("%d, ", n);
+		printf("%d\n", 98);
 	}
-	printf("\n");
 }
