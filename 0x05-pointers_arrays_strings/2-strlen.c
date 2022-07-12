@@ -3,14 +3,17 @@
 /**
  * _strlen - checks the length of a string
  * @s: string to check
- * return: success
+ * Return: the length of the string
  */
 
-void int _strlen(char *s)
+int _strlen(char *s)
 {
-	int length = 0;
+	int len = 0;
 
-	while (s[length])
-		length++;
-	return (length);
+	if (s)
+	{
+	while (*(s + len))
+		++len;
+	}
+	return (len);
 }
